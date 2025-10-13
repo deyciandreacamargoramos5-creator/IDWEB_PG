@@ -1,0 +1,372 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    padding: 15px 40px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.Logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    gap: 5px;
+}
+
+.Logo-container img.logo {
+    width: 250px;
+    height: auto;
+}
+
+.Logo-container h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+nav {
+    background: linear-gradient(90deg, #002b5b, #004a99);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ffd700;
+    color: #002b5b;
+    box-shadow: 0 2px 10px rgba(255, 215, 0, 0.5);
+}
+section {
+    padding: 40px 80px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section h2 {
+    color: #004aad;
+    border-left: 5px solid #ffcc00;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+section p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+#Valores ul {
+    list-style-type: square;
+    margin-left: 25px;
+}
+
+.noticia {
+    display: flex;
+    align-items: flex-start;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+    padding: 20px;
+    transition: transform 0.2s ease;
+}
+
+.noticia:hover {
+    transform: scale(1.02);
+}
+
+.noticia img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.contenido-noticia h3 {
+    color: #004aad;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.contenido-noticia p {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+header{
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+}
+
+nav ul {
+    flex-direction: row;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+section {
+    padding: 25px;
+}
+
+.noticia {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.noticia img {
+    margin-bottom: 15px;
+}
+
+/* -------------------- */
+/* DESTINOS STYLES */
+/* -------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    background: linear-gradient(90deg, #002b5b, #004a99);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ffd700;
+    color: #002b5b;
+    box-shadow: 0 2px 10px rgba(255, 215, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.8em;
+    color: #002b5b;
+    margin: 25px 0 10px 0;
+    letter-spacing: 1px;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    background: #ffd700;
+    margin: 8px auto;
+    border-radius: 3px;
+}
+
+.subtitulo {
+
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 5px solid #ffd700;
+}
+
+.subtitulo .container {
+    background-color: rgba(0, 0, 0, 0.55);
+    display: inline-block;
+    padding: 25px 40px;
+    border-radius: 12px;
+}
+
+.subtitulo h2 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.subtitulo p {
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.destinos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.Departamento {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Departamento:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.Departamento img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.Aeropuerto {
+    padding: 18px;
+}
+
+.Departamento h3 {
+    color: #002b5b;
+    margin-bottom: 8px;
+}
+
+.Departamento p {
+    font-size: 0.95em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+thead {
+    background-color: #002b5b;
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #eaf1ff;
+}
+
+h2, h3 {
+    color: #002b5b;
+    margin-bottom: 10px;
+}
+
+p.caja {
+    color: #555;
+    font-size: 0.95em;
+}
+
+footer {
+    background-color: #002b5b;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 50px;
+    font-size: 0.9em;
+}
+
+nav ul {
+    flex-direction: row;
+}
+
+.subtitulo {
+    padding: 70px 15px;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+destinos {
+    grid-template-columns: 1fr;
+}
