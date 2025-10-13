@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header><h1>Compra de pasajes</h1></header>
-    <h2>Vuelo</h2>
     <nav>
         <img src="imagenes/logo_cuadrado.png" alt="Logo de Xen Airlines" width="250">
         <ul>
@@ -19,13 +17,14 @@
             <li><a href="centro-de-ayuda/">Atención al cliente</a></li>
             <li><a href="conocenos.html">Conocenos</a></li>
         </ul>
-    </nav> 
+    </nav>
+    <header><h1>Compra de pasajes</h1></header>
     <form action="#" method="post">
         <h2>Informacion del vuelo</h2>
         <input type="radio" id="ida" name="tipo_viaje" value="ida">
-        <label for="ida">Solo ida</label><br>
+        <label for="ida">Solo ida</label>
         <input type="radio" id="ida_vuelta" name="tipo_viaje" value="ida_vuelta">
-        <label for="ida_vuelta">Ida y vuelta</label><br><br>
+        <label for="ida_vuelta">Ida y vuelta</label><br>
         <label for="aeropuerto">Aeropuerto</label>
         <input id="aeropuerto" name="aeropuerto" list="aeropuertos" autocomplete="off" required>
         <datalist id="aeropuertos">
@@ -49,16 +48,16 @@
             <option value="Aeropuerto Teniente FAP Jaime Montreuil Morales (Pisco)"></option>
             <option value="Aeropuerto Alférez FAP David Figueroa Fernandini (Huánuco)"></option>
             <option value="Aeropuerto de Ilo (Ilo)"></option>
-        </datalist><br><br> 
+        </datalist><br> 
         <label for="fecha">Fecha de vuelo</label><br>
-        <input type="date" id="fecha" name="fecha"><br><br>
+        <input type="date" id="fecha" name="fecha"><br>
         <label for="claseVuelo">Clase de vuelo</label><br>
         <input type="radio" id="economica" name="tipo_viaje" value="economica">
-        <label for="economica">Economica</label><br>
+        <label for="economica">Economica</label>
         <input type="radio" id="premium" name="tipo_viaje" value="premium">
-        <label for="premium">Premium</label><br>
+        <label for="premium">Premium</label>
         <input type="radio" id="ejecutiva" name="tipo_viaje" value="ejecutiva">
-        <label for="ejecutiva">Ejecutiva/Buseiness</label><br>
+        <label for="ejecutiva">Ejecutiva/Business</label>
         <input type="radio" id="primera" name="tipo_viaje" value="primera">
         <label for="primera">Primera clase</label><br><br>
         <label for="pasajero">Tipo de pasajero</label><br>
@@ -70,26 +69,26 @@
         <label for="bebes">Bebes (menores de 2 años)</label><br><br>
         <h2>Datos personales</h2>
         <label for="nombre">Nombres</label><br>
-        <input type="text" id="nombre" class="nombre" placeholder="Escriba sus nombre"><br><br>
+        <input type="text" id="nombre" class="nombre" placeholder="Escriba sus nombre"><br>
         <label for="apellido">Apellidos</label><br>
-        <input type="text" id="apellido" class="apellido" placeholder="Escriba sus apellidos"><br><br>
+        <input type="text" id="apellido" class="apellido" placeholder="Escriba sus apellidos"><br>
         <label for="claseVuelo">Clase de vuelo</label><br>
         <input type="radio" id="dni" name="tipo_documento" value="dni">
-        <label for="dni">DNI</label><br>
+        <label for="dni">DNI</label>
         <input type="radio" id="pasaporte" name="tipo_documento" value="pasaporte">
-        <label for="pasaporte">Pasaporte</label><br>
+        <label for="pasaporte">Pasaporte</label>
         <input type="radio" id="carnet" name="tipo_documento" value="carnet">
-        <label for="carnet">Carnet de extranjeria</label><br><br>
-        <input type="text" id="numero_D" name="numero_D" placeholder="Escriba su numero de documento"><br><br>
+        <label for="carnet">Carnet de extranjeria</label><br>
+        <input type="text" id="numero_D" name="numero_D" placeholder="Escriba su numero de documento"><br>
         <label for="fecha">Fecha de nacimiento</label><br>
-        <input type="date" id="fecha_N" name="fecha_N"><br><br>
+        <input type="date" id="fecha_N" name="fecha_N"><br> 
         <label for="genero">Género</label><br>
         <input type="radio" id="masculino" name="genero" value="masculino">
-        <label for="masculino">Masculino</label><br>
+        <label for="masculino">Masculino</label>
         <input type="radio" id="femenino" name="genero" value="femenino">
         <label for="femenino">Femenino</label><br><br>
         <label for="correo">Correo electrónico</label><br>
-        <input type="email" id="correo" name="correo" placeholder="Escriba su correo"><br><br>
+        <input type="email" id="correo" name="correo" placeholder="Escriba su correo"><br>
         <label for="telefono">Telefono de contacto</label><br>
         <input type="number" id="telefono" name="telefono" placeholder="Escriba su numero de telefono"><br><br>
         <h2>Preferencias de asientos y equipaje</h2>
@@ -101,7 +100,7 @@
         <input type="radio" id="salidaA" name="seleccion" value="salidaA">
         <label for="salidaA">Salida de Emergencia</label><br><br>
         <label for="adicional">Equipaje adicional</label><br>
-        <textarea id="adicional" name="adicional" placeholder="Comentarios sobre equipaje: numero de maletas, tipo, peso"></textarea><br><br>
+        <textarea id="adicional" name="adicional" placeholder="Comentarios sobre equipaje: numero de maletas, tipo, peso"></textarea><br>
         <label for="asistencia">Mascotas o asistencia especial</label><br>
         <input type="radio" id="mascotas" name="asistencia_adicional" value="mascotas">
         <label for="mascotas">Mascotas</label>
@@ -111,13 +110,13 @@
         <label for="ruedas">Silla de ruedas</label><br><br>
         <h2>Metodos de pago</h2>
         <label for="nombreT">Nombre del titular de la tarjeta</label><br>
-        <input id="nombreT" type="text" name="nb" placeholder="Nombre del titular"><br><br>
+        <input id="nombreT" type="text" name="nb" placeholder="Nombre del titular"><br>
         <lable for="numeroTarjeta">Numero de tarjeta</lable><br>
-        <input type="number" id="numeroTarjeta" name="numeroTarjeta" placeholder="Numero de tarjeta"><br><br>
+        <input type="number" id="numeroTarjeta" name="numeroTarjeta" placeholder="Numero de tarjeta"><br>
         <label for="fechaVencimiento">Fecha de vencimiento</label><br>
-        <input type="month" id="fechaVencimiento" name="fechaVencimiento"><br><br>
+        <input type="month" id="fechaVencimiento" name="fechaVencimiento"><br>
         <label for="cvv">CVV</label><br>
-        <input type="number" id="cvv" name="cvv" placeholder="CVV"><br><br>
+        <input type="number" id="cvv" name="cvv" placeholder="CVV"><br>
         <label for="direccionF">Direccion de facturación</label><br>
         <input type="email" id="direccionF" name="direccionF" placeholder="ejemplo@gmail.com"><br><br>
         <fieldset>
