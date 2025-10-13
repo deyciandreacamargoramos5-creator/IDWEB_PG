@@ -53,7 +53,6 @@ header h1 {
     margin: 25px 0 10px 0;
     letter-spacing: 1px;
 }
-
 header h1::after {
     content: "";
     display: block;
@@ -64,29 +63,26 @@ header h1::after {
     border-radius: 3px;
 }
 
+/*Navegador*/
 nav {
     background: linear-gradient(90deg, #002b5b, #004a99);
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
     padding: 12px 0;
-    position: sticky;
     top: 0;
     z-index: 1000;
 }
-
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    gap: 5px;
     flex-wrap: wrap;
     padding: 0 20px;
 }
-
 nav ul li {
     position: relative;
 }
-
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -97,11 +93,17 @@ nav ul li a {
     padding: 10px 15px;
     border-radius: 5px;
 }
-
 nav ul li a:hover {
     background-color: #ffd700;
     color: #002b5b;
     box-shadow: 0 2px 10px rgba(255, 215, 0, 0.5);
+}
+nav img {
+    filter: drop-shadow(0 0 40px rgb(255, 255, 255));
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
 }
 
 /* ============================================
@@ -576,7 +578,6 @@ address {
 /* ============================================
    PIE DE PÁGINA
    ============================================ */
-
 footer {
     background-color: #004aad;
     color: white;
@@ -586,7 +587,6 @@ footer {
     font-size: 0.9rem;
     clear: both;
 }
-
 footer h2 {
     color: white;
     border-left: none;
@@ -594,39 +594,35 @@ footer h2 {
     font-size: 1.3rem;
     margin-top: 15px;
 }
-
 footer h3 {
     color: #ffd700;
     font-size: 1.05rem;
 }
-
 footer ul {
     list-style: none;
     margin: 10px 0;
 }
-
 footer li {
     margin-bottom: 5px;
 }
-
 footer a {
     color: #ffd700;
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
 footer a:hover {
     color: white;
     text-decoration: underline;
 }
-
 footer div {
     margin-bottom: 20px;
 }
-
 footer p {
     text-align: center;
     margin-bottom: 10px;
+}
+footer address {
+    background-color: #004aad;
 }
 
 /* ============================================
