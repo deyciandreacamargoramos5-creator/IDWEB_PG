@@ -574,107 +574,140 @@ li {
 
 address {
     font-style: normal;
-    background-color: #f8f9fa;
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
 }
 
 /* ============================================
-   PIE DE PÁGINA - CORREGIDO
+   PIE DE PÁGINA MEJORADO Y UNIFICADO
    ============================================ */
 
 footer {
-    background-color: #004aad;
+    background: linear-gradient(135deg, #003d82 0%, #004aad 100%);
     color: white;
-    text-align: center;
-    padding: 25px 0;
-    font-size: 0.9rem;
-    clear: both;
-    position: relative;
-    width: 100%;
-    margin: 0;
-    z-index: 1000;
-    box-sizing: border-box;
+    padding: 50px 20px 20px;
     margin-top: auto;
+    width: 100%;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
 }
 
-footer h2 {
-    color: white;
-    border-left: none;
-    padding: 15px 0;
-    font-size: 1.3rem;
-    margin-top: 15px;
-}
-
-footer h3 {
-    color: #ffd700;
-    font-size: 1.05rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-footer ul {
-    list-style: none;
-    margin: 10px 0;
-    padding: 0;
-}
-
-footer li {
-    margin-bottom: 5px;
-}
-
-footer a {
-    color: #ffd700;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer a:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-footer div {
-    margin-bottom: 20px;
-}
-
-footer p {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-footer address {
-    background-color: #004aad;
-    font-style: normal;
-    margin: 10px 0;
-}
-
-/* Mejoras para el footer */
 .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 1.5rem;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 20px;
+    gap: 40px;
+    margin-bottom: 30px;
 }
 
 .footer-section {
     text-align: left;
 }
 
-.footer-section h3 {
+.footer-section h2 {
+    color: #ffd700;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
     border-left: none;
-    padding-left: 0;
+    padding: 0;
+    font-weight: 700;
+}
+
+.footer-section h3 {
+    color: #ffd700;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.footer-section p {
+    color: #e0e0e0;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+.footer-section ul li strong {
+    color: #ffd700;
+    font-weight: 600;
+}
+
+.footer-section a {
+    color: #ffd700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.footer-section a:hover {
+    color: white;
+    transform: translateX(5px);
+}
+
+.footer-section address {
+    color: #ffd700;
+    font-style: normal;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    border-left: none;
+    font-size: 1rem;
 }
 
 .copyright {
     text-align: center;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: #b8d4ff;
+    font-size: 0.95rem;
+}
+
+.copyright p {
+    margin: 0;
+    text-align: center;
+}
+
+/* Estilos específicos para la sección de redes sociales */
+.footer-section.social-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-section.social-links ul li {
+    margin-bottom: 0;
+}
+
+.footer-section.social-links a {
+    display: inline-block;
+    color: #ffd700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.footer-section.social-links a:hover {
+    color: white;
+    text-decoration: underline;
+    transform: translateX(5px);
 }
 
 /* ============================================
@@ -695,38 +728,6 @@ footer address {
     font-size: 0.85em;
     color: #666;
 }
-
-.contenedor {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.contenedor:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.contenedor a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.contenedor h3 {
-    color: #004aad;
-    margin-bottom: 10px;
-}
-
-.contenedor p {
-    color: #666;
-    margin-bottom: 0;
-}
-
-/* ============================================
-   ESTILOS ESPECÍFICOS - PÁGINAS HELP
-   ============================================ */
 
 .contenedor {
     background: white;
@@ -839,10 +840,6 @@ footer address {
         width: 180px;
     }
 
-    footer h3 {
-        font-size: 1em;
-    }
-
     main {
         padding: 10px;
     }
@@ -853,11 +850,19 @@ footer address {
 
     .footer-content {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 30px;
     }
 
     .footer-section {
         text-align: center;
+    }
+
+    .footer-section.social-links ul {
+        justify-content: center;
+    }
+
+    footer {
+        padding: 30px 15px 15px;
     }
 }
 
@@ -920,12 +925,16 @@ footer address {
     }
 
     footer {
-        padding: 15px;
-        font-size: 0.8em;
+        padding: 20px 10px 10px;
+        font-size: 0.9em;
     }
 
-    footer h3 {
-        font-size: 0.9rem;
+    .footer-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .footer-section h3 {
+        font-size: 1rem;
     }
 
     aside {
@@ -943,5 +952,15 @@ footer address {
 
     th, td {
         padding: 6px 8px;
+    }
+
+    .footer-section.social-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-section.social-links a {
+        width: 100%;
+        justify-content: center;
     }
 }
