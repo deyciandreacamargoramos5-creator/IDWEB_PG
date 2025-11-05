@@ -1,7 +1,3 @@
-/* ============================================
-   ESTILOS GENERALES - XEN AIRLINES
-   ============================================ */
-
 * {
     margin: 0;
     padding: 0;
@@ -19,9 +15,7 @@ body {
     line-height: 1.6;
 }
 
-/* ============================================
-   HEADER Y NAVEGACIÓN
-   ============================================ */
+/* HEADER Y NAVEGACIÓN */
 
 header {
     background-color: #004aad;
@@ -117,9 +111,7 @@ nav img {
     margin-bottom: 10px;
 }
 
-/* ============================================
-   SECCIONES Y CONTENIDO PRINCIPAL
-   ============================================ */
+/* Secciones y contenido principal */
 
 main {
     width: 90%;
@@ -192,9 +184,7 @@ p {
     margin: 40px auto;
 }
 
-/* ============================================
-   ASIDE - CENTRO DE AYUDA
-   ============================================ */
+/* Aside - centro de ayuda */
 
 aside {
     width: 25%;
@@ -243,9 +233,7 @@ aside nav ul li a:hover {
     padding-left: 20px;
 }
 
-/* ============================================
-   ARTÍCULOS Y DETAILS
-   ============================================ */
+/* Artículos y details */
 
 article {
     margin-bottom: 20px;
@@ -300,9 +288,7 @@ details li {
     margin-bottom: 8px;
 }
 
-/* ============================================
-   TABLAS
-   ============================================ */
+/* Tablas */
 
 table {
     width: 100%;
@@ -334,9 +320,7 @@ tbody tr:hover {
     cursor: pointer;
 }
 
-/* ============================================
-   FORMULARIOS
-   ============================================ */
+/* Formularios */
 
 form {
     background: white;
@@ -464,9 +448,7 @@ button[type="reset"]:hover {
     color: white;
 }
 
-/* ============================================
-   TARJETAS DE DESTINOS
-   ============================================ */
+/* Tarjetas de destinos */
 
 .destinos {
     display: grid;
@@ -508,9 +490,7 @@ button[type="reset"]:hover {
     text-align: left;
 }
 
-/* ============================================
-   NOTICIAS
-   ============================================ */
+/* Noticias */
 
 .noticia {
     display: flex;
@@ -555,9 +535,7 @@ button[type="reset"]:hover {
     font-size: 0.9em;
 }
 
-/* ============================================
-   LISTAS
-   ============================================ */
+/* Listas */
 
 ul, ol {
     margin-left: 20px;
@@ -580,9 +558,7 @@ address {
     margin-top: 10px;
 }
 
-/* ============================================
-   PIE DE PÁGINA MEJORADO Y UNIFICADO
-   ============================================ */
+/* Pie de página */
 
 footer {
     background: linear-gradient(135deg, #003d82 0%, #004aad 100%);
@@ -710,9 +686,7 @@ footer {
     transform: translateX(5px);
 }
 
-/* ============================================
-   UTILITIES
-   ============================================ */
+/* Contenedores y cajas */
 
 .caja {
     color: #555;
@@ -761,11 +735,9 @@ footer {
     font-size: 0.95em;
 }
 
-/* ============================================
-   RESPONSIVE DESIGN
-   ============================================ */
+/* RESPONSIVE */
 
-@media (max-width: 768px) {
+    @media(max-width: 768px) {
     nav ul {
         flex-direction: row;
         gap: 10px;
@@ -866,7 +838,7 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+@media(max-width: 480px) {
     nav ul {
         gap: 5px;
         justify-content: center;

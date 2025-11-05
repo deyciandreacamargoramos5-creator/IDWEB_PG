@@ -23,10 +23,10 @@
     <form class="form-container">
         <h3>Información personal</h3>
         <label for="nombre">Nombre completo</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Coloque su nombre" required>
+        <input type="text" id="nombre" name="nombre" placeholder="Coloque su nombre">
         <br><br>
         <label for="documento">Tipo de documento</label>
-        <select id="documento" name="documento" required>
+        <select id="documento" name="documento">
             <option value="">Selecciona...</option>
             <option value="dni">DNI</option>
             <option value="ce">Carné de extranjería</option>
@@ -34,20 +34,20 @@
         </select>
         <br><br>
         <label for="numero-doc">Número de documento</label>
-        <input type="text" id="numero-doc" name="numero-doc" placeholder="Ej. 12345678" required>
+        <input type="text" id="numero-doc" name="numero-doc" placeholder="Ej. 12345678">
         <br><br>
         <label for="fecha-nacimiento">Fecha de nacimiento</label>
-        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
         <br><br>
         <label for="nacionalidad">Nacionalidad</label>
-        <input type="text" id="nacionalidad" name="nacionalidad" placeholder="Coloque su nacionalidad" required>
+        <input type="text" id="nacionalidad" name="nacionalidad" placeholder="Coloque su nacionalidad">
         <br><br>
         <h3>Datos de contacto</h3>
         <label for="correo">Correo electrónico</label>
         <input type="email" id="correo" name="correo" placeholder="tuemail@ejemplo.com" required>
         <br><br>
         <label for="telefono">Teléfono móvil</label>
-        <input type="tel" id="telefono" name="telefono" placeholder="+51 999 888 777" required>
+        <input type="tel" id="telefono" name="telefono" placeholder="+51 999 888 777">
         <br><br>
         <h3> Información de cuenta</h3>
         <label for="contrasena">Contraseña</label>
@@ -61,7 +61,7 @@
         <input type="text" id="tarjeta" name="tarjeta" placeholder="Número de tarjeta LATAM Pass, etc.">
         <h3>Consentimiento</h3>
         <div class="checkbox">
-            <input type="checkbox" id="terminos" required>
+            <input type="checkbox" id="terminos">
             <label for="terminos">Acepto los términos y condiciones del programa.</label>
         </div>
         <div class="checkbox">
@@ -111,5 +111,6 @@
         <p>&copy; 2025 XenAirlines. Todos los derechos reservados.</p>
     </div>
 </footer>
+<script src="js/validacion-membresia.js"></script>
 </body>
 </html>
