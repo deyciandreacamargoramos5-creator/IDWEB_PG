@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+nav {
+  background: linear-gradient(90deg, #002b5b, #004aad);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  padding: 12px 0;
+  text-align: center;
+}
+
+nav img {
+  width: 220px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.8));
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #ffd700;
+  color: #002b5b;
+  box-shadow: 0 2px 10px rgba(255, 215, 0, 0.4);
+}
+
+.banner-ayuda {
+  background: linear-gradient(90deg, #004aad, #002b5b);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  margin-bottom: 40px;
+  border-bottom: 4px solid #ffd700;
+}
+
+.banner-ayuda h1 {
+  font-size: 2.4em;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.banner-ayuda p {
+  font-size: 1.1em;
+  color: #f5f5f5;
+}
+
+.grid-ayuda {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+}
+
+.bloque-ayuda {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bloque-ayuda:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.bloque-ayuda h3 {
+  color: #004aad;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.bloque-ayuda p {
+  color: #555;
+  font-size: 0.95em;
+}
+
+/* ============================================
+   ESTRUCTURA PRINCIPAL DE PÁGINAS INTERNAS
+   (ASIDE + CONTENIDO)
+   ============================================ */
+main {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 30px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  align-items: stretch;
+}
+
+aside {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+aside h2 {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+aside nav img {
+  width: 180px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+aside nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+aside nav ul li a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+aside nav ul li a:hover {
+  background-color: #f0f7ff;
+  color: black;
+  transform: translateX(5px);
+}
+
+.contenedor-principal-cda {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 25px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  min-height: 100%;
+}
+
+.contenedor-secundario-cda {
+  background: #f8f9fa;
+  border-left: 5px solid #004aad;
+  border-radius: 8px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.contenedor-secundario-cda:hover {
+  transform: translateY(-3px);
+}
+
+details {
+  background: transparent;
+  border: none;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #004aad;
+  font-size: 1.05em;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+summary:hover {
+  color: #ffd700;
+}
+
+details p,
+details ul {
+  color: #555;
+  margin-top: 8px;
+  margin-left: 15px;
+}
+
+details ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+footer {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 40px 15px;
+  font-size: 0.9rem;
+}
+
+footer h2 {
+  color: white;
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+
+footer h3 {
+  color: #ffd700;
+  margin-top: 15px;
+  font-size: 1.05rem;
+}
+
+footer ul {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
