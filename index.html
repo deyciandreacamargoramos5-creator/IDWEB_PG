@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página principal</title>
+    <title>Xen Airlines</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -31,7 +31,7 @@
             </div>
             <div>
                 <label for="aeropuertoS">Desde...</label>
-                <input id="aeropuertoS" name="aeropuerto" list="aeropuertos" autocomplete="off" required>
+                <input id="aeropuertoS" name="origen" list="aeropuertos" autocomplete="off" required>
                 <datalist id="aeropuertos">
                     <option value="Aeropuerto Internacional Jorge Chávez (Lima)" id="lima"></option>
                     <option value="Aeropuerto Internacional Alejandro Velasco Astete (Cusco)"></option>
@@ -58,7 +58,7 @@
             </div>
             <div>
                 <label for="aeropuertoD">Hacía...</label>
-                <input id="aeropuertoD" name="aeropuerto" list="aeropuertos" autocomplete="off">
+                <input id="aeropuertoD" name="destino" list="aeropuertos" autocomplete="off">
                 <datalist id="aeropuertos">
                     <option value="Aeropuerto Internacional Jorge Chávez (Lima)"></option>
                     <option value="Aeropuerto Internacional Alejandro Velasco Astete (Cusco)"></option>
@@ -91,7 +91,7 @@
             </div>
             <div>
                 <label for="pasajeros">Cantidad de pasajeros</label>
-                <input type="number" id="pasajeros" name="pps" placeholder="Selecciona la cantidad" min="0" max="100">
+                <input type="number" id="pasajeros" name="pps" placeholder="Selecciona la cantidad" min="1" max="100">
                 <br><br>
             </div>
             <button type="submit">Buscar</button>
