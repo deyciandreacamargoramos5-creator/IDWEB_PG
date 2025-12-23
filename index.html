@@ -19,7 +19,7 @@
         </ul>
     </nav> 
     <main>
-        <form>
+        <form id="formularioINDEX">
             <div>
                 <h2>¿A dondé quieres que te llevemos?</h2>
                 <label for="tipoVuelo">¿Tu viaje es de...</label>
@@ -30,10 +30,10 @@
                 <br>
             </div>
             <div>
-                <label for="aeropuerto">Desde...</label>
-                <input id="aeropuerto" name="aeropuerto" list="aeropuertos" autocomplete="off" required>
+                <label for="aeropuertoS">Desde...</label>
+                <input id="aeropuertoS" name="aeropuerto" list="aeropuertos" autocomplete="off" required>
                 <datalist id="aeropuertos">
-                    <option value="Aeropuerto Internacional Jorge Chávez (Lima)"></option>
+                    <option value="Aeropuerto Internacional Jorge Chávez (Lima)" id="lima"></option>
                     <option value="Aeropuerto Internacional Alejandro Velasco Astete (Cusco)"></option>
                     <option value="Aeropuerto Internacional Capitán FAP José Abelardo Quiñones (Chiclayo)"></option>
                     <option value="Aeropuerto Internacional Capitán FAP Víctor Montes (Piura)"></option>
@@ -57,8 +57,8 @@
                 <br><br>
             </div>
             <div>
-                <label for="aeropuerto">Hacía...</label>
-                <input id="aeropuerto" name="aeropuerto" list="aeropuertos" autocomplete="off">
+                <label for="aeropuertoD">Hacía...</label>
+                <input id="aeropuertoD" name="aeropuerto" list="aeropuertos" autocomplete="off">
                 <datalist id="aeropuertos">
                     <option value="Aeropuerto Internacional Jorge Chávez (Lima)"></option>
                     <option value="Aeropuerto Internacional Alejandro Velasco Astete (Cusco)"></option>
@@ -96,6 +96,7 @@
             </div>
             <button type="submit">Buscar</button>
         </form>
+        <div id="resultadosVuelos"></div>
     </main>
     <footer>
     <div class="footer-content">
@@ -137,5 +138,6 @@
         <p>&copy; 2025 XenAirlines. Todos los derechos reservados.</p>
     </div>
 </footer>
+<script src="/js/formBuscar.js"></script>
 </body>
 </html>

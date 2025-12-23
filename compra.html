@@ -25,8 +25,8 @@
         <label for="ida">Solo ida</label>
         <input type="radio" id="ida_vuelta" name="tipo_viaje" value="ida_vuelta">
         <label for="ida_vuelta">Ida y vuelta</label><br>
-        <label for="aeropuerto">Aeropuerto</label>
-        <input id="aeropuerto" name="aeropuerto" list="aeropuertos" autocomplete="off" required>
+        <label for="aeropuertoS">Aeropuerto de Salida</label>
+        <input id="aeropuertoS" name="aeropuerto" list="aeropuertos" autocomplete="off" required>
         <datalist id="aeropuertos">
             <option value="Aeropuerto Internacional Jorge Chávez (Lima)"></option>
             <option value="Aeropuerto Internacional Alejandro Velasco Astete (Cusco)"></option>
@@ -48,7 +48,33 @@
             <option value="Aeropuerto Teniente FAP Jaime Montreuil Morales (Pisco)"></option>
             <option value="Aeropuerto Alférez FAP David Figueroa Fernandini (Huánuco)"></option>
             <option value="Aeropuerto de Ilo (Ilo)"></option>
-        </datalist><br> 
+        </datalist><br>
+        <label for="aeropuertoD">Aeropuerto de Destino</label>
+        <input id="aeropuertoD" name="aeropuerto" list="aeropuertos" autocomplete="off" required>
+        <datalist id="aeropuertos">
+            <option value="Aeropuerto Internacional Jorge Chávez (Lima)"></option>
+            <option value="Aeropuerto Internacional Alejandro Velasco Astete (Cusco)"></option>
+            <option value="Aeropuerto Internacional Capitán FAP José Abelardo Quiñones (Chiclayo)"></option>
+            <option value="Aeropuerto Internacional Capitán FAP Víctor Montes (Piura)"></option>
+            <option value="Aeropuerto Internacional Rodríguez Ballón (Arequipa)"></option>
+            <option value="Aeropuerto Internacional Coronel FAP Francisco Secada Vignetta (Iquitos)"></option>
+            <option value="Aeropuerto Coronel FAP Alfredo Mendivil Duarte (Ayacucho)"></option>
+            <option value="Aeropuerto Mayor General FAP Armando Revoredo Iglesias (Cajamarca)"></option>
+            <option value="Aeropuerto de Chachapoyas (Chachapoyas)"></option>
+            <option value="Aeropuerto Inca Manco Cápac (Juliaca)"></option>
+            <option value="Aeropuerto Capitán FAP David Abenzur Rengifo (Pucallpa)"></option>
+            <option value="Aeropuerto Padre Aldamiz (Puerto Maldonado)"></option>
+            <option value="Aeropuerto Coronel FAP Carlos Ciriani Santa Rosa (Tacna)"></option>
+            <option value="Aeropuerto Cadete FAP Guillermo del Castillo Paredes (Tarapoto)"></option>
+            <option value="Aeropuerto Capitán FAP Carlos Martínez de Pinillos (Trujillo)"></option>
+            <option value="Aeropuerto Capitán FAP Pedro Canga Rodríguez (Tumbes)"></option>
+            <option value="Aeropuerto Francisco Carlé (Jauja)"></option>
+            <option value="Aeropuerto Teniente FAP Jaime Montreuil Morales (Pisco)"></option>
+            <option value="Aeropuerto Alférez FAP David Figueroa Fernandini (Huánuco)"></option>
+            <option value="Aeropuerto de Ilo (Ilo)"></option>
+        </datalist><br>
+        <label for="vuelo">Seleccione el numero de vuelo</label><br>
+        <input type="number" id="vuelo" name="vuelo" placeholder="Escriba el numero de vuelo" min="1" max="4"><br>
         <label for="fecha">Fecha de vuelo</label><br>
         <input type="date" id="fecha" name="fecha"><br>
         <label for="claseVuelo">Clase de vuelo</label><br>
