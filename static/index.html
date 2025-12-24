@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <img src="imagenes/logo_cuadrado.png" alt="Logo de Xen Airlines" width="250">
+        <ul>
+            <li><a href="index.html">Página principal</a></li>
+            <li><a href="destinos.html">Destinos y rutas</a></li>
+            <li><a href="membresia.html">Membresía de viajero frecuente</a></li>
+            <li><a href="centro-de-ayuda/">Atención al cliente</a></li>
+            <li><a href="conocenos.html">Conocenos</a></li>
+            <li id="menu-login"><a href="login.html">Iniciar Sesión</a></li>
+            <li id="menu-usuario" style="display: none;">
+                <span id="nombre-usuario" style="color: white; font-weight: bold;"></span>
+                <a href="#" onclick="cerrarSesion()">(Salir)</a>
+            </li>
+        </ul>
+    </nav> 
+    <main>
+        <form id="formularioINDEX">
+    <div>
+        <h2>Reserva tu vuelo</h2>
+        </div>
+
+    <div>
+        <label for="aeropuertoS">Origen:</label>
+        <input list="aeropuertos" name="aeropuertoS" id="aeropuertoS" placeholder="Ciudad de origen" required>
+        <datalist id="aeropuertos">
+            <option value="Lima" id="lima"></option>
+                    <option value="Cusco"></option>
+                    <option value="Chiclayo"></option>
+                    <option value="Piura"></option>
+                    <option value="Arequipa"></option>
+                    <option value="Iquitos"></option>
+                    <option value="Ayacucho"></option>
+                    <option value="Cajamarca"></option>
+                    <option value="Chachapoyas"></option>
+                    <option value="Juliaca"></option>
+                    <option value="Pucallpa"></option>
+                    <option value="Puerto Maldonado"></option>
+                    <option value="Tacna"></option>
+                    <option value="Tarapoto"></option>
+                    <option value="Trujillo"></option>
+                    <option value="Tumbes"></option>
+                    <option value="Jauja"></option>
+                    <option value="Pisco"></option>
+                    <option value="Huánuco"></option>
+                    <option value="Ilo"></option>
+        </datalist>
+    </div>
+
+    <div>
+        <label for="aeropuertoD">Destino:</label>
+        <input list="aeropuertos" name="aeropuertoD" id="aeropuertoD" placeholder="Ciudad de destino" required>
+        </div>
+
+    <div>
+        <label for="fechaIda">Fecha de viaje:</label>
+        <input type="date" id="fechaIda" name="fechaIda" required>
+    </div>
+
+    <button type="submit" id="botonBuscar">Buscar Vuelos</button>
+    <button type="reset" id="botonLimpiar">Limpiar</button>
+</form>
+
+<div id="resultadosVuelos"></div>
+        <div id="resultadosVuelos"></div>
+    </main>
+    <footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h2>Atención al cliente</h2>
+            <p>Estamos aquí para ayudarte con cualquier consulta sobre tus vuelos.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Teléfonos de contacto</h3>
+            <ul>
+                <li><strong>Atención al cliente:</strong> (01) 213 8200</li>
+                <li><strong>Teléfono fijo:</strong> (1) 2138200</li>
+                <li><strong>Teléfono de contacto:</strong> 250 850</li>
+                <li><strong>Desde fuera del país:</strong> +51 1 2138200</li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Correo electrónico</h3>
+            <address>xenairlinescontacto@gmail.com</address>
+
+            <h3>Puntos de atención</h3>
+            <p>Oficina central Lima: Av. La Marina 3456, San Miguel</p>
+            <p>Horario: Lunes a viernes de 8:00 a.m. a 6:00 p.m.</p>
+        </div>
+
+        <div class="footer-section social-links">
+            <h3>Redes sociales</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>&copy; 2025 XenAirlines. Todos los derechos reservados.</p>
+    </div>
+</footer>
+<script src="js/formBuscar.js"></script>
+</body>
+</html>

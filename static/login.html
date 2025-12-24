@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Xen Airlines</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <img src="imagenes/logo_cuadrado.png" alt="Logo de Xen Airlines" width="250">
+        <ul>
+            <li><a href="index.html">Página principal</a></li>
+            <li><a href="destinos.html">Destinos y rutas</a></li>
+            <li><a href="membresia.html">Membresía de viajero frecuente</a></li>
+            <li><a href="centro-de-ayuda/">Atención al cliente</a></li>
+            <li><a href="conocenos.html">Conocenos</a></li>
+        </ul>
+    </nav> 
+
+    <div style="max-width: 400px; margin: 50px auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px;">
+        <h2 style="text-align: center;">Iniciar Sesión</h2>
+        <form id="formLogin">
+            <label>Email:</label><br>
+            <input type="email" id="email" required style="width: 100%; padding: 8px; margin-bottom: 15px;"><br>
+            
+            <label>Contraseña:</label><br>
+            <input type="password" id="password" required style="width: 100%; padding: 8px; margin-bottom: 20px;"><br>
+            
+            <button type="submit" style="width: 100%; padding: 10px; background: #004aad; color: white; border: none; cursor: pointer;">
+                Ingresar
+            </button>
+        </form>
+        <p id="mensajeError" style="color: red; text-align: center; margin-top: 10px;"></p>
+    </div>
+
+    <script src="js/formLogin.js"></script>
+</body>
+</html>
